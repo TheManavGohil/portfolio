@@ -142,33 +142,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Rishi was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rishi's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rishi is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Manav was an incredible experience. His technical expertise and problem-solving skills are exceptional. He consistently delivered high-quality code and was always responsive to feedback. His attention to detail and commitment to best practices made our project a success.",
+    name: "Sarah Chen",
+    title: "Lead Developer at TechInnovate",
   },
   {
     quote:
-      "Collaborating with Rishi was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rishi's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rishi is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Manav's ability to translate complex requirements into elegant solutions is remarkable. His full-stack development skills and modern tech stack knowledge helped us build a robust application. His collaborative approach and clear communication made the development process smooth and efficient.",
+    name: "David Kumar",
+    title: "Product Manager at DigitalSolutions",
   },
   {
     quote:
-      "Collaborating with Rishi was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rishi's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rishi is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Manav is a talented developer who brings creativity and technical excellence to every project. His expertise in React, Next.js, and Three.js helped us create an immersive user experience. His dedication to writing clean, maintainable code is truly impressive.",
+    name: "Emily Rodriguez",
+    title: "CTO at CreativeTech",
   },
   {
     quote:
-      "Collaborating with Rishi was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rishi's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rishi is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Manav was a pleasure. His deep understanding of web technologies and ability to implement complex features with ease made him an invaluable team member. His portfolio projects showcase his versatility and technical prowess.",
+    name: "Alex Thompson",
+    title: "Senior Developer at WebCraft",
   },
   {
     quote:
-      "Collaborating with Rishi was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rishi's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rishi is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Manav's portfolio demonstrates his strong foundation in both frontend and backend development. His projects like ArtVistas and KiranaMart showcase his ability to create sophisticated, user-friendly applications. His technical skills and problem-solving abilities are truly outstanding.",
+    name: "Priya Sharma",
+    title: "Technical Lead at InnovateLabs",
   },
 ];
 
