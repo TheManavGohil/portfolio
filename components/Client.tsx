@@ -9,8 +9,8 @@ const Clients = () => {
         Kind words from <span className="text-purple"> satisfied clients</span>
       </h1>
       <p className="text-[14.2px] text-wrap sm:text-sm opacity-40 mt-4 text-center">
-        Note: This is just for website showcasing purposes. I have not worked
-        for these companies.
+        Note: The following section is just for showcasing purposes. I have not
+        worked with these companies.
       </p>
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
@@ -23,6 +23,7 @@ const Clients = () => {
             speed="slow"
           />
         </div>
+
       </div>
     </section>
   );

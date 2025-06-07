@@ -24,17 +24,14 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Powered by Next.JS, Typescript & Sentry
-          </h2>
-
+          
           <TextGenerateEffect
-            className="text-center text-[42px] md:text-5xl lg:text-[70px] "
+            className="mt-7 text-center text-[42px] md:text-5xl lg:text-[70px] "
             words="Turning Ideas into Reality,   One Codeblock at a time."
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl ">
-            Hi, I&apos;m Rishi, A Web Developer based in Mumbai.
+            Hi, I&apos;m Manav Gohil, A Web Developer based in Mumbai.
           </p>
 
           <a title="Show my work" href="#projects">

@@ -240,16 +240,16 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/rishi-raj-gupta45/",
+    link: "https://www.linkedin.com/in/manavgohil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
   },
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/rishiigupta04",
+    link: "https://github.com/TheManavGohil",
   },
   {
     id: 2,
-    img: "/twit.svg",
-    link: "https://x.com/rishiigupta04?t=UgmSdTUvplYuCE9MtelQDg&s=09",
+    img: "/insta.svg",
+    link: "https://www.instagram.com/manav._.g?igsh=MTdveWFjcjM2MWFjcg==",
   },
 ];
