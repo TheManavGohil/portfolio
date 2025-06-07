@@ -37,7 +37,6 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-
   img,
   imgClassName,
   titleClassName,
@@ -59,7 +58,6 @@ export const BentoGridItem = ({
 
   const defaultOptions = {
     loop: copied,
-
     autoplay: copied,
     animationData: animationData,
     rendererSettings: {
@@ -69,10 +67,20 @@ export const BentoGridItem = ({
 
   const handleCopy = () => {
     const text = "gohilmanav2005@gmail.com";
-    navigator.clipboard.writeText(text);
-
-    setCopied(true);
-
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    
+    try {
+      document.execCommand('copy');
+      setCopied(true);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+    
+    document.body.removeChild(textArea);
+    
     setTimeout(() => {
       setCopied(false);
     }, 6000);
@@ -149,8 +157,8 @@ export const BentoGridItem = ({
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-80 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-05 
+                    lg:opacity-10 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -162,8 +170,8 @@ export const BentoGridItem = ({
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-80 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-05 
+                    lg:opacity-10 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>

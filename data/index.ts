@@ -106,7 +106,7 @@ export const projects = [
     title: "Chatty- a real time chat app",
     des: "A modern real-time chat application with React frontend and Node.js backend, featuring real-time messaging and cloud image storage. The application uses Vite for fast development, Tailwind CSS for responsive design, and includes features like real-time message updates, user authentication, and cloud-based image sharing capabilities.",
     img: "/p1.png",
-    iconLists: ["re.svg","node.svg", "/tail.svg", "vite.svg","postgresql.svg",],
+    iconLists: ["re.svg","node.png", "/tail.svg", "vite.svg","postgresql.svg",],
     link: "https://github.com/TheManavGohil/chat-app",
   },
   {
@@ -117,7 +117,7 @@ export const projects = [
     iconLists: [
       "/re.svg",
       "/tail.svg",
-      "node.svg",
+      "node.png",
       "vite.svg"
     ],
     link: "https://github.com/TheManavGohil/Paytm",
