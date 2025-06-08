@@ -65,22 +65,38 @@ export const BentoGridItem = ({
     },
   };
 
-  const handleCopy = () => {
+  const handleCopy = async () => {
     const text = "gohilmanav2005@gmail.com";
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    document.body.appendChild(textArea);
-    textArea.select();
     
+    // Try using the Clipboard API first
     try {
-      document.execCommand('copy');
+      await navigator.clipboard.writeText(text);
       setCopied(true);
     } catch (err) {
-      console.error('Failed to copy:', err);
+      // If Clipboard API fails, try the fallback method
+      try {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';  // Prevent scrolling to bottom
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        const successful = document.execCommand('copy');
+        if (successful) {
+          setCopied(true);
+        } else {
+          console.error('Failed to copy text');
+        }
+        
+        document.body.removeChild(textArea);
+      } catch (err) {
+        console.error('Failed to copy text:', err);
+      }
     }
     
-    document.body.removeChild(textArea);
-    
+    // Reset the copied state after 6 seconds
     setTimeout(() => {
       setCopied(false);
     }, 6000);

@@ -107,7 +107,7 @@ export const projects = [
     des: "A modern real-time chat application with React frontend and Node.js backend, featuring real-time messaging and cloud image storage. The application uses Vite for fast development, Tailwind CSS for responsive design, and includes features like real-time message updates, user authentication, and cloud-based image sharing capabilities.",
     img: "/p1.png",
     iconLists: ["re.svg","node.png", "/tail.svg", "vite.svg","postgresql.svg",],
-    link: "https://github.com/TheManavGohil/chat-app",
+    link: "https://chatty-z8cs.onrender.com",
   },
   {
     id: 2,
@@ -169,10 +169,59 @@ export const testimonials = [
       "Manav's portfolio demonstrates his strong foundation in both frontend and backend development. His projects like ArtVistas and KiranaMart showcase his ability to create sophisticated, user-friendly applications. His technical skills and problem-solving abilities are truly outstanding.",
     name: "Priya Sharma",
     title: "Technical Lead at InnovateLabs",
+  },{
+    quote:
+      "Manav's proactive mindset and eagerness to learn made a huge difference in our development cycle. He quickly adapted to new tools and technologies and contributed valuable insights during team discussions. His strong work ethic and dedication are commendable.",
+    name: "Rohan Mehta",
+    title: "Engineering Manager at CodeCatalyst",
   },
+  {
+    quote:
+      "Having Manav on the team meant consistently high-quality results. His UI/UX sensibility combined with his technical acumen helped us deliver a polished product that users loved. He strikes the perfect balance between creativity and precision.",
+    name: "Anika Verma",
+    title: "Design Lead at PixelForge",
+  },
+  {
+    quote:
+      "Manav impressed us with his ability to handle real-world challenges with confidence. Whether it was debugging a tough backend issue or optimizing the frontend performance, he always found efficient solutions. A true asset to any tech team.",
+    name: "Jason Lee",
+    title: "Full-Stack Architect at DevSphere",
+  },
+  
 ];
 
-
+export const companies = [
+  {
+    id: 1,
+    name: "cloudinary",
+    img: "/cloud.svg",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "appwrite",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
+  },
+  {
+    id: 3,
+    name: "HOSTINGER",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
+  },
+  {
+    id: 4,
+    name: "stream",
+    img: "/s.svg",
+    nameImg: "/streamName.svg",
+  },
+  {
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
 
 export const socialMedia = [
   {
