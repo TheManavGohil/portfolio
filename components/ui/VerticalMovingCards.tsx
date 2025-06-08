@@ -36,9 +36,9 @@ export const VerticalMovingCards = ({
         className
       )}
     >
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {/* Left column - slides down */}
-        <div className="w-1/3">
+        <div className="w-full md:w-1/2 lg:w-1/3">
           <div className={cn(
             "animate-scroll-down",
             start && "animate-scroll-down"
@@ -79,7 +79,7 @@ export const VerticalMovingCards = ({
         </div>
 
         {/* Center column - slides up */}
-        <div className="w-1/3">
+        <div className="w-full md:w-1/2 lg:w-1/3">
           <div className={cn(
             "animate-scroll-up",
             start && "animate-scroll-up"
@@ -120,7 +120,7 @@ export const VerticalMovingCards = ({
         </div>
 
         {/* Right column - slides down */}
-        <div className="w-1/3">
+        <div className="w-full md:w-1/2 lg:w-1/3 hidden md:block">
           <div className={cn(
             "animate-scroll-down",
             start && "animate-scroll-down"
