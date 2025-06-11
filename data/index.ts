@@ -130,12 +130,10 @@ export const projects = [
   //   iconLists: [
   //     "/next.svg",
   //     "/tail.svg",
-  //     "/ts.svg",
-  //     "/sentry.svg",
-  //     "vite.svg",
+  //     "/ts.svg",,
   //     "vercel.jpg",
   //   ],
-  //   link: "https://manav-portfolio-website.vercel.app/",
+  //   link: "https://portfolio-inky-rho-61.vercel.app/",
   // },
 ];
 
@@ -225,11 +223,6 @@ export const companies = [
 
 export const socialMedia = [
   {
-    id: 3,
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/manavgohil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-  },
-  {
     id: 1,
     img: "/git.svg",
     link: "https://github.com/TheManavGohil",
@@ -239,4 +232,9 @@ export const socialMedia = [
     img: "/insta.svg",
     link: "https://www.instagram.com/manav._.g?igsh=MTdveWFjcjM2MWFjcg==",
   },
+  {
+    id: 3,
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/manavgohil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+  }
 ];

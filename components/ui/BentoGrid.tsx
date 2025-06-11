@@ -55,48 +55,24 @@ export const BentoGridItem = ({
   const rightLists = ["Node/Express.js", "MongoDB,PostgreSQL"];
 
   const [copied, setCopied] = useState(false);
+  const [key, setKey] = useState(0);
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
+    loop: false,
+    autoplay: true,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
-  const handleCopy = async () => {
+  const handleCopy = () => {
     const text = "gohilmanav2005@gmail.com";
+    navigator.clipboard.writeText(text);
     
-    // Try using the Clipboard API first
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-    } catch (err) {
-      // If Clipboard API fails, try the fallback method
-      try {
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        textArea.style.position = 'fixed';  // Prevent scrolling to bottom
-        textArea.style.opacity = '0';
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        
-        const successful = document.execCommand('copy');
-        if (successful) {
-          setCopied(true);
-        } else {
-          console.error('Failed to copy text');
-        }
-        
-        document.body.removeChild(textArea);
-      } catch (err) {
-        console.error('Failed to copy text:', err);
-      }
-    }
+    setCopied(true);
+    setKey(prev => prev + 1);
     
-    // Reset the copied state after 6 seconds
     setTimeout(() => {
       setCopied(false);
     }, 6000);
@@ -197,12 +173,13 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
-                }`}
-              >
-                <Lottie options={defaultOptions} height={200} width={400} />
+              <div className="absolute -bottom-5 right-0">
+                <Lottie 
+                  key={key}
+                  options={defaultOptions} 
+                  height={200} 
+                  width={400}
+                />
               </div>
 
               <MagicButton
