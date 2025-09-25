@@ -1,5 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -218,6 +219,36 @@ export const companies = [
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "Full Stack Developer Intern",
+    company: "DiamondRock",
+    duration: "1st June – 25th July 2025",
+    desc: [
+      "Led and executed the complete migration of the codebase from React to Next.js with a team of 15 interns",
+      "Integrated Kite API data with advanced TradingView charts to deliver real-time trading insights and analytics",
+      "Improved platform visibility by implementing SEO optimization strategies, boosting search rankings and discoverability"
+    ],
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Software Developer Intern",
+    company: "ThatsMyJob",
+    duration: "18th July 2025 – Present",
+    desc: [
+      "Independently developed a complete website from scratch featuring four distinct portals with robust access management, OAuth authentication, and Google Meet integration",
+      "Utilized Next.js, PostgreSQL, Cloudinary, and Vercel to build a scalable and efficient platform",
+      "Integrated SaaSlogic (subscription management tool) for managing subscriptions seamlessly",
+      "Deployed the website live: marketplace.thatsmyjob.in"
+    ],
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
   },
 ];
 
