@@ -25,19 +25,17 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm font-light md:font-normal">
-          Copyright © 2025 Manav Gohil
-        </p>
-        <div className="flex items-center md:gap-3 gap-6">
+      <div className="flex mt-16 justify-center items-center">
+        <div className="flex items-center gap-4">
           {socialMedia.map((profile) => (
             <a
               href={profile.link}
               target="_blank"
+              rel="noopener noreferrer"
               key={profile.id}
-              className="cursor-pointer mt-6 w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="cursor-pointer w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:border-purple/50 transition-colors"
             >
-              <img src={profile.img} alt={profile.img} width={20} height={20} />
+              <img src={profile.img} alt={profile.link} width={20} height={20} />
             </a>
           ))}
         </div>

@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Experience", link: "#experience" },
+  { name: "Achievements", link: "#achievements" },
   { name: "Projects", link: "#projects" },
   // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -72,70 +73,61 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 10,
-    title: "Artvistas - A virtual Museum",
-    des: "ArtVistas is an immersive, interactive, and educational virtual museum experience that brings global art to life with a futuristic touch. 🌍✨ Key highlights include a 3D virtual tour, story-driven artwork exploration, animated galleries, and themed collections like The Rise of Rome",
-    img: "/p10.png",
-    iconLists: [
-      "re.svg",
-      "/vite.svg",
-      "/tail.svg",
-      "/three.svg",
-      "/gsap.svg",
-      "/vercel.jpg",
-    ],
-    link: "https://artvistas.vercel.app/",
-  },
-  {
-    id: 9,
-    title: "Kirana-mart",
-    des: "KiranaMart is a digital platform that helps local grocery stores go online, enabling them to manage inventory and serve customers through a modern e-commerce interface. The platform provides real-time stock management, secure payments, and order tracking for seamless digital shopping experience.",
-    img: "/p9.png",
-    iconLists: [
-      "next.svg",
-      "prisma.svg",
-      "postgresql.svg",
-      "tail.svg",
-      "vite.svg",
-      "vercel.jpg",
-    ],
-    link: "https://kirana-mart.vercel.app/",
-  },
-
-  {
     id: 1,
-    title: "Chatty- a real time chat app",
-    des: "A modern real-time chat application with React frontend and Node.js backend, featuring real-time messaging and cloud image storage. The application uses Vite for fast development, Tailwind CSS for responsive design, and includes features like real-time message updates, user authentication, and cloud-based image sharing capabilities.",
+    title: "MatchIQ - AI Candidate Matching Engine",
+    des: "An Explainable AI-powered recruitment engine designed to scale to 100k+ candidates. Features semantic section matching, multi-facet scoring, and Groq LLaMA-generated evidence-backed match explanations with strengths and fit recommendations.",
     img: "/p1.png",
-    iconLists: ["re.svg","node.png", "/tail.svg", "vite.svg","postgresql.svg",],
-    link: "https://chatty-z8cs.onrender.com",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/postgresql.svg",
+      "/dock.svg",
+    ],
+    link: "http://98.70.35.50:3000",
   },
   {
     id: 2,
-    title: "PayTm-clone",
-    des: "IdeaGo serves as a versatile platform where users can both share their imaginative concepts and explore a curated collection of top and innovative ideas with an upvoting system facilitated by anonymous users to rank ideas.",
-    img: "p22.png",
+    title: "ChromaGenz - AI Color Palette Platform",
+    des: "AI-powered color scheme generator utilizing Groq LLaMA 3.3 70B and K-Means clustering. Generate harmonious, WCAG-accessible palettes from prompts, images, and URLs with live website previews and color blindness simulations.",
+    img: "/p22.png",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/fm.svg",
+      "/re.svg",
+    ],
+    link: "https://github.com/TheManavGohil/ChromaGenz",
+  },
+  {
+    id: 3,
+    title: "ShipSack - Automated CI/CD & Cloud Deployer",
+    des: "A Vercel-like cloud deployment PaaS. Automatically clones Git repositories, executes isolated containerized builds in Docker, uploads build artifacts to AWS S3, and routes traffic via dynamic subdomains with DynamoDB status tracking.",
+    img: "/p3.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
-      "node.png",
-      "vite.svg"
+      "/ts.svg",
+      "/dock.svg",
+      "/node.png",
     ],
-    link: "https://github.com/TheManavGohil/Paytm",
+    link: "https://github.com/TheManavGohil",
   },
-  // {
-  //   id: 7,
-  //   title: "Very Own Portfolio Website ",
-  //   des: "A portfolio website I made for my personal usecase with Next.js, Tailwind, and Typescript. Fully responsive and is powered by the powerful library - Aceternity UI. Learned to incorporate Sentry for error tracking and user feedback.",
-  //   img: "/p7.png",
-  //   iconLists: [
-  //     "/next.svg",
-  //     "/tail.svg",
-  //     "/ts.svg",,
-  //     "vercel.jpg",
-  //   ],
-  //   link: "https://portfolio-inky-rho-61.vercel.app/",
-  // },
+  {
+    id: 4,
+    title: "ArtVistas - 3D Immersive Virtual Museum",
+    des: "A futuristic virtual museum and digital art gallery breaking physical and geographic barriers. Features interactive 3D exhibition hall navigation, story-driven artwork walkthroughs, and high-performance visual animations.",
+    img: "/p10.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/three.svg",
+      "/gsap.svg",
+      "/vite.svg",
+    ],
+    link: "https://artvistas.vercel.app/",
+  },
 ];
 
 export const testimonials = [
@@ -225,30 +217,140 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full Stack Developer Intern",
-    company: "DiamondRock",
-    duration: "1st June – 25th July 2025",
+    title: "Software Developer Intern",
+    company: "ThatsMyJob",
+    roleType: "Full-Stack SDE",
+    typeColor: "#38bdf8",
+    duration: "Jul 2025 – Dec 2025",
+    location: "Remote",
+    period: "2025",
+    isCurrent: false,
     desc: [
-      "Led and executed the complete migration of the codebase from React to Next.js with a team of 15 interns",
-      "Integrated Kite API data with advanced TradingView charts to deliver real-time trading insights and analytics",
-      "Improved platform visibility by implementing SEO optimization strategies, boosting search rankings and discoverability"
+      "Independently developed a complete web platform from scratch featuring four distinct portals with robust access management, OAuth authentication, and Google Meet integration.",
+      "Utilized Next.js, PostgreSQL, Cloudinary, and Vercel to build a scalable and production-ready platform.",
+      "Integrated SaaSlogic for managing subscription lifecycles, billing, and automated tier provisioning seamlessly.",
+      "Deployed the website live at marketplace.thatsmyjob.in and contributed to the ThatsMyJob Beta mobile application using React Native."
     ],
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    skills: ["Next.js", "PostgreSQL", "Cloudinary", "Vercel", "OAuth", "SaaSlogic", "React Native"],
+    thumbnail: "/thatsmyjob.png",
   },
   {
     id: 2,
-    title: "Software Developer Intern",
-    company: "ThatsMyJob",
-    duration: "18th July 2025 – Present",
+    title: "Machine Learning Systems Intern",
+    company: "RAI Tracker Ltd.",
+    roleType: "ML Systems",
+    typeColor: "#fb923c",
+    duration: "Apr 2026 – Jun 2026",
+    location: "Greater London, England, United Kingdom",
+    period: "2026",
+    isCurrent: false,
     desc: [
-      "Independently developed a complete website from scratch featuring four distinct portals with robust access management, OAuth authentication, and Google Meet integration",
-      "Utilized Next.js, PostgreSQL, Cloudinary, and Vercel to build a scalable and efficient platform",
-      "Integrated SaaSlogic (subscription management tool) for managing subscriptions seamlessly",
-      "Deployed the website live: marketplace.thatsmyjob.in"
+      "Developed an LLM evaluation pipeline to assess models across 12 Responsible AI dimensions, including reliability and accountability, using Azure OpenAI APIs for systematic testing.",
+      "Built the operational backbone of a RAG chatbot by containerizing PostgreSQL, ChromaDB, Arize Phoenix, and Prometheus with Docker.",
+      "Implemented Prometheus instrumentation and Grafana dashboards for pipeline latency, agent performance, token usage, retrieval metrics, and service health observability."
     ],
-    className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    skills: ["Azure OpenAI", "LangGraph", "ChromaDB", "Docker", "Prometheus", "Grafana", "RAG"],
+    thumbnail: "/RAIT.png",
+  },
+  {
+    id: 3,
+    title: "DevOps Intern",
+    company: "ARCON",
+    roleType: "DevOps & Infrastructure",
+    typeColor: "#c084fc",
+    duration: "Jun 2026 – Present",
+    location: "Mumbai · On-site",
+    period: "2026",
+    isCurrent: true,
+    desc: [
+      "Engineered a distributed Windows server & process monitoring suite to provide real-time visibility into process and resource health across the server fleet, collecting telemetry every 30s with TimescaleDB analytics, automated alerts, heap profiling, process controls, and WinRM self-healing.",
+      "Engineered a Jenkins multi-environment build pipeline consolidating 48 individual pipelines (4 environments × 12 projects) into a single job, introducing parallel batched UI builds that reduced build time from 36 to 12 minutes (67% reduction).",
+      "Developed a centralized database backup & restoration utility enabling developers to perform MySQL and MSSQL backup operations via a web interface, eliminating manual server access."
+    ],
+    skills: ["Jenkins", "TimescaleDB", "WinRM", "Docker", "PowerShell", "CI/CD Pipelines", "MySQL/MSSQL"],
+    thumbnail: "/arcon.png",
+  },
+];
+
+export const achievements = [
+  {
+    id: 1,
+    title: "Co-Founder & Tech Web-Dev Head",
+    organization: "DJS CodeAI (AI Club of DJSCE)",
+    period: "Jun 2025 – Jun 2026",
+    badge: "Club Leadership & Founding",
+    badgeColor: "from-purple-500 to-indigo-600",
+    description:
+      "Co-founded DJS CodeAI, the official artificial intelligence club of Dwarkadas J. Sanghvi College of Engineering. Led and mentored a 10-member technical team, overseeing end-to-end web architecture, deployment, and digital initiatives.",
+    highlights: [
+      "Architected and deployed the official club platform (djscodeai.in) and mentor–mentee portal (portal.djscodeai.in) with end-to-end SEO optimization.",
+      "Organized the flagship hackathon 'CodeVerse' (codeverse.djscodeai.in), managing 32 competing teams through multi-round challenges.",
+      "Engineered a Bug-Solving Marathon for 12 shortlisted teams across 12 private repos, with GitHub webhooks, real-time leaderboards, and an LLM-powered commit verifier."
+    ],
+    tags: ["Leadership", "Next.js", "System Architecture", "Webhooks", "LLM Verifier", "Community"],
+    link: "https://codeverse.djscodeai.in",
+    linkText: "Visit CodeVerse",
+    category: "Leadership",
+  },
+  {
+    id: 2,
+    title: "2nd Runner-Up — Codeshastra 12",
+    organization: "Dwarkadas J. Sanghvi College of Engineering",
+    period: "Apr 2025",
+    badge: "🏆 2nd Runner-Up Hackathon",
+    badgeColor: "from-amber-400 to-orange-500",
+    description:
+      "Secured 2nd Runner-Up with Team Bazinga! at Codeshastra 12 by engineering 'PujaVerify' — an offline-first trust and verification platform connecting pandits and devotees with transparent digital visibility.",
+    highlights: [
+      "Offline-first architecture built for real temple environments with low or unstable connectivity.",
+      "In-app recording and live streaming for complete ritual transparency, backed by smart background synchronization.",
+      "AI-driven ritual verification for authenticity, paired with a multi-language voice assistant for pandits.",
+      "Adapted under high pressure after a pre-hackathon storage failure forced a complete fresh Ubuntu setup on day one."
+    ],
+    tags: ["AI Verification", "Offline-First", "Live Streaming", "Voice Assistant", "Full-Stack"],
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7453406675102744577/",
+    linkText: "View LinkedIn Post",
+    category: "Hackathon Win",
+  },
+  {
+    id: 3,
+    title: "2nd Runner-Up — Frontend Arena",
+    organization: "Rajiv Gandhi Institute of Technology (RGIT)",
+    period: "2025",
+    badge: "🏆 2nd Runner-Up Hackathon",
+    badgeColor: "from-fuchsia-500 to-purple-600",
+    description:
+      "Secured 2nd Runner-Up with Team Lazarus at RGIT's Frontend Arena by building 'ArtVistas' — a futuristic, immersive virtual museum and digital art gallery.",
+    highlights: [
+      "Interactive 3D virtual museum navigation allowing users to explore exhibition halls as if physically present.",
+      "Rich story-driven artwork walkthroughs, curated historical collections (e.g. 'The Rise of Rome'), and audio guides.",
+      "Enhanced accessibility features breaking geographic barriers for art lovers and individuals with physical disabilities.",
+      "High-performance visual animations crafted using React, Three.js, GSAP, and Framer Motion."
+    ],
+    tags: ["Three.js", "3D Virtual Tour", "GSAP", "Framer Motion", "React", "Tailwind CSS"],
+    link: "https://artvistas.vercel.app/",
+    linkText: "Explore ArtVistas Live",
+    category: "Hackathon Win",
+  },
+  {
+    id: 4,
+    title: "Top 5 Track Finalists — HACKANOVA 2025",
+    organization: "Thakur College of Engineering",
+    period: "2025",
+    badge: "🌟 Top 5 Finalist (350+ Teams)",
+    badgeColor: "from-cyan-400 to-blue-600",
+    description:
+      "Emerged as Top 5 in our track and overall Finalists among 350+ teams in a grueling 36-hour hackathon, creating an AI-powered Indian Sign Language (ISL) detection and accessibility platform.",
+    highlights: [
+      "Real-time Hindi and English alphabet/word sign language recognition for inclusive communication.",
+      "Custom sign language training engine allowing users to record and train custom gestures on the fly.",
+      "Interactive gamified learning modules designed to make sign language learning intuitive and engaging.",
+      "End-to-end computer vision and web pipeline evaluated by industry jury for real-world assistive impact."
+    ],
+    tags: ["Computer Vision", "Indian Sign Language", "Accessibility", "AI/ML", "Interactive Gaming"],
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7303756743065399298/",
+    linkText: "View LinkedIn Post",
+    category: "Hackathon Finalist",
   },
 ];
 
@@ -260,12 +362,12 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/insta.svg",
-    link: "https://www.instagram.com/manav._.g?igsh=MTdveWFjcjM2MWFjcg==",
+    img: "/leetcode.svg",
+    link: "https://leetcode.com/u/ManavGohil/",
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/manavgohil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-  }
+    link: "https://www.linkedin.com/in/manavgohil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
 ];

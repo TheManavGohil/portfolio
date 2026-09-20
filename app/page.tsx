@@ -4,6 +4,7 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import Experience from "@/components/Experience";
+import Achievements from "@/components/Achievements";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Clients from "@/components/Client";
@@ -17,6 +18,7 @@ export default function Home() {
 
         <Grid />
         <Experience />
+        <Achievements />
         <RecentProjects />
         <Clients />
         <Approach />
