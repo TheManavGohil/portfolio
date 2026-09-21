@@ -90,7 +90,7 @@ export const projects = [
     id: 2,
     title: "ChromaGenz - AI Color Palette Platform",
     des: "AI-powered color scheme generator utilizing Groq LLaMA 3.3 70B and K-Means clustering. Generate harmonious, WCAG-accessible palettes from prompts, images, and URLs with live website previews and color blindness simulations.",
-    img: "/p22.png",
+    img: "/chromagenz.png",
     iconLists: [
       "/next.svg",
       "/tail.svg",
@@ -280,6 +280,7 @@ export const achievements = [
     period: "Jun 2025 – Jun 2026",
     badge: "Club Leadership & Founding",
     badgeColor: "from-purple-500 to-indigo-600",
+    image: "/codeverse.png",
     description:
       "Co-founded DJS CodeAI, the official artificial intelligence club of Dwarkadas J. Sanghvi College of Engineering. Led and mentored a 10-member technical team, overseeing end-to-end web architecture, deployment, and digital initiatives.",
     highlights: [
@@ -299,6 +300,7 @@ export const achievements = [
     period: "Apr 2025",
     badge: "🏆 2nd Runner-Up Hackathon",
     badgeColor: "from-amber-400 to-orange-500",
+    image: "/codeshastra.png",
     description:
       "Secured 2nd Runner-Up with Team Bazinga! at Codeshastra 12 by engineering 'PujaVerify' — an offline-first trust and verification platform connecting pandits and devotees with transparent digital visibility.",
     highlights: [
@@ -319,6 +321,7 @@ export const achievements = [
     period: "2025",
     badge: "🏆 2nd Runner-Up Hackathon",
     badgeColor: "from-fuchsia-500 to-purple-600",
+    image: "/p10.png",
     description:
       "Secured 2nd Runner-Up with Team Lazarus at RGIT's Frontend Arena by building 'ArtVistas' — a futuristic, immersive virtual museum and digital art gallery.",
     highlights: [
@@ -339,6 +342,7 @@ export const achievements = [
     period: "2025",
     badge: "🌟 Top 5 Finalist (350+ Teams)",
     badgeColor: "from-cyan-400 to-blue-600",
+    image: "/hackanova.png",
     description:
       "Emerged as Top 5 in our track and overall Finalists among 350+ teams in a grueling 36-hour hackathon, creating an AI-powered Indian Sign Language (ISL) detection and accessibility platform.",
     highlights: [

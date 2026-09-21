@@ -18,77 +18,58 @@ const Achievements = () => {
     }
   };
 
-  // Modern stylized placeholder visuals for each achievement
-  const renderPlaceholderVisual = (achievement: typeof achievements[0], index: number) => {
+  // Visual showcase card for each achievement with real image
+  const renderAchievementVisual = (achievement: typeof achievements[0], index: number) => {
     return (
-      <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-br from-[#0c0f2e] via-[#080b21] to-[#04071d] p-6 flex flex-col justify-between group shadow-2xl">
+      <div className="relative w-full h-72 sm:h-80 lg:h-[380px] rounded-3xl overflow-hidden border border-white/15 bg-[#04071d] group shadow-2xl transition-all duration-300 hover:border-purple/50 hover:shadow-[0_0_35px_rgba(203,172,249,0.15)]">
         {/* Ambient Gradient Background Glow */}
         <div
-          className={`absolute -top-16 -right-16 w-56 h-56 rounded-full bg-gradient-to-br ${achievement.badgeColor} blur-3xl opacity-25 group-hover:opacity-40 transition-opacity duration-500`}
+          className={`absolute -inset-1 bg-gradient-to-br ${achievement.badgeColor} rounded-3xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none`}
         />
-        <div className="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-purple/20 blur-3xl opacity-20" />
 
-        {/* Top bar of placeholder graphic */}
-        <div className="relative z-10 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-rose-500/80" />
-            <span className="w-3 h-3 rounded-full bg-amber-500/80" />
-            <span className="w-3 h-3 rounded-full bg-emerald-500/80" />
-            <span className="text-xs font-mono text-white-200/50 ml-2">
-              showcase-{achievement.id}.png
-            </span>
-          </div>
-          <span className="text-xs px-2.5 py-1 rounded-full border border-white/15 bg-white/5 font-mono text-white-200">
+        {/* Real Image */}
+        <img
+          src={achievement.image}
+          alt={achievement.title}
+          className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+        />
+
+        {/* Gradient Overlay for contrast and readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#04071d]/90 via-[#04071d]/20 to-black/50 pointer-events-none" />
+
+        {/* Top Header Overlay Bar */}
+        <div className="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
+          <span className="text-xs font-semibold px-3 py-1 rounded-full border border-white/20 bg-black/60 backdrop-blur-md text-white shadow-lg flex items-center gap-1.5">
+            {getCategoryIcon(achievement.category)}
+            <span>{achievement.badge}</span>
+          </span>
+          <span className="text-xs px-2.5 py-1 rounded-full border border-white/15 bg-black/60 backdrop-blur-md font-mono text-white-200">
             {achievement.period}
           </span>
         </div>
 
-        {/* Center Graphic Badge */}
-        <div className="relative z-10 flex flex-col items-center justify-center my-auto text-center px-4">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center mb-4 shadow-[0_0_30px_rgba(203,172,249,0.2)] group-hover:scale-110 transition-transform duration-300">
-            {index === 0 ? (
+        {/* Bottom Bar overlay */}
+        <div className="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between">
+          <div className="flex items-center gap-2 max-w-[65%]">
+            {index === 0 && (
               <img
                 src="/codeai.png"
-                alt="DJS CodeAI"
-                className="w-full h-full object-contain p-2 rounded-xl"
+                alt="Logo"
+                className="w-7 h-7 object-contain rounded-lg bg-black/60 p-1 border border-white/20"
               />
-            ) : index === 1 ? (
-              <FaTrophy className="text-3xl sm:text-4xl text-amber-400" />
-            ) : index === 2 ? (
-              <FaAward className="text-3xl sm:text-4xl text-fuchsia-400" />
-            ) : (
-              <FaStar className="text-3xl sm:text-4xl text-cyan-400" />
             )}
+            <p className="text-xs sm:text-sm text-white font-semibold truncate drop-shadow-md">
+              {achievement.organization}
+            </p>
           </div>
-
-          <div className="font-bold text-lg sm:text-xl text-white max-w-xs leading-snug">
-            {achievement.title}
-          </div>
-          <div className="text-xs sm:text-sm text-purple mt-1 font-medium">
-            {achievement.organization}
-          </div>
-          {index === 0 ? (
-            <div className="text-[11px] text-purple/80 mt-2 font-medium">
-              Official DJS CodeAI Logo
-            </div>
-          ) : (
-            <div className="text-[11px] text-white-200/50 mt-2 italic font-light">
-              [Add official photo / screenshot here]
-            </div>
-          )}
-        </div>
-
-        {/* Bottom Tag Bar */}
-        <div className="relative z-10 flex items-center justify-between border-t border-white/10 pt-3 text-xs text-white-200">
-          <span className="font-semibold text-white/90">{achievement.badge}</span>
           {achievement.link && (
             <a
               href={achievement.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-purple hover:underline"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-purple/40 bg-black/75 backdrop-blur-md text-xs font-medium text-purple hover:text-white hover:border-purple transition-all shadow-md"
             >
-              <span>{achievement.linkText || "View details"}</span>
+              <span>{achievement.linkText || "View"}</span>
               <FaExternalLinkAlt className="text-[10px]" />
             </a>
           )}
@@ -196,9 +177,9 @@ const Achievements = () => {
                 )}
               </div>
 
-              {/* Visual Side (Placeholder or Image) */}
+              {/* Visual Side (Achievement Image) */}
               <div className="w-full lg:w-1/2">
-                {renderPlaceholderVisual(item, index)}
+                {renderAchievementVisual(item, index)}
               </div>
             </motion.div>
           );
