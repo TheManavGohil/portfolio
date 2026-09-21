@@ -11,7 +11,7 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+        {projects.map(({ id, title, des, img, iconLists, link, linkText }) => (
           <div
             key={id}
             className="sm:h-[41rem] h-[32rem] mt-12 lg:min-h-[32.5rem] flex items-center justify-center sm:w-[576px] w-[80vw]"
@@ -20,6 +20,7 @@ const RecentProjects = () => {
               <a
                 href={link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10 object-cover object-center"
               >
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[]">
@@ -41,7 +42,7 @@ const RecentProjects = () => {
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center justify-center">
-                  {iconLists.map((icon, index) => (
+                  {iconLists.map((icon: string, index: number) => (
                     <div
                       key={icon}
                       className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
@@ -58,9 +59,10 @@ const RecentProjects = () => {
                   <a
                     href={link}
                     target="_blank"
-                    className="flex lg:text-xl md:text-xs text-sm"
+                    rel="noopener noreferrer"
+                    className="flex lg:text-xl md:text-xs text-sm text-purple hover:underline"
                   >
-                    Check Live Site
+                    {linkText || "Check Live Site"}
                   </a>
                   <FaLocationArrow className="ms-3" color="#cbacf9" />
                 </div>

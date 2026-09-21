@@ -76,7 +76,7 @@ export const projects = [
     id: 1,
     title: "MatchIQ - AI Candidate Matching Engine",
     des: "An Explainable AI-powered recruitment engine designed to scale to 100k+ candidates. Features semantic section matching, multi-facet scoring, and Groq LLaMA-generated evidence-backed match explanations with strengths and fit recommendations.",
-    img: "/p1.png",
+    img: "/matchIQ.png",
     iconLists: [
       "/next.svg",
       "/tail.svg",
@@ -84,7 +84,8 @@ export const projects = [
       "/postgresql.svg",
       "/dock.svg",
     ],
-    link: "http://98.70.35.50:3000",
+    link: "https://docs.google.com/videos/d/18rbkdbpGqp9-R1yrElWckuPWuf0ez5T4zVk5D7A7JnA/edit?usp=sharing",
+    linkText: "Watch Demo Video",
   },
   {
     id: 2,
@@ -98,13 +99,14 @@ export const projects = [
       "/fm.svg",
       "/re.svg",
     ],
-    link: "https://github.com/TheManavGohil/ChromaGenz",
+    link: "https://chromagenz.vercel.app/",
+    linkText: "View Live Site",
   },
   {
     id: 3,
     title: "ShipSack - Automated CI/CD & Cloud Deployer",
     des: "A Vercel-like cloud deployment PaaS. Automatically clones Git repositories, executes isolated containerized builds in Docker, uploads build artifacts to AWS S3, and routes traffic via dynamic subdomains with DynamoDB status tracking.",
-    img: "/p3.png",
+    img: "/shipsack.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -112,7 +114,8 @@ export const projects = [
       "/dock.svg",
       "/node.png",
     ],
-    link: "https://github.com/TheManavGohil",
+    link: "https://github.com/TheManavGohil/ShipSack",
+    linkText: "View on GitHub",
   },
   {
     id: 4,
@@ -127,6 +130,7 @@ export const projects = [
       "/vite.svg",
     ],
     link: "https://artvistas.vercel.app/",
+    linkText: "Check Live Site",
   },
 ];
 
